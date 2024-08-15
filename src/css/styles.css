@@ -1,0 +1,79 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./benefits.css');
+@import url('./footer.css');
+@import url('./modal.css');
+
+:root {
+  --primary-text-color: #001E41;
+  --secondary-text-color: #909090;
+  --menu-text-color: #7d7d7d;
+  --num-color: #e3eeff;
+  --bg-color: #fff;
+  --hero-bg-color: #E2F2FF;
+  --card-bg-color: #F8F8FA;
+  --btn-color: #5d78ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  position: relative;
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+}
+
+
+button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--btn-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.25%;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  color: var(--primary-text-color);
+}
+
+.disabled{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .button {
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5%;
+  }
+}

@@ -1,0 +1,373 @@
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 300px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#modal.active {
+    display: flex;
+}
+
+.modal-close {
+    all: unset;
+    position: absolute;
+    width: 22.5px;
+    height: 22.5px;
+    top: 7.5px;
+    right: 6.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal-img {
+    display: none;
+    width: 400px;
+    height: 550px;
+}
+
+.left-side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 38.75px 30.75px 11.25px;
+    background-color: var(--bg-color);
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 2%;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.modal-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.25%;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.25%;
+    text-align: left;
+    color: var(--secondary-text-color);
+    margin-bottom: 3px;
+}
+
+input {
+    width: 100%;
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.25%;
+    text-align: left;
+    border: .75px solid #d5d5d6;
+    border-radius: 6px;
+    padding: 8px 9px;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+    font-size: 10.5px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    font-size: 10.5px;
+    margin-bottom: 18px;
+}
+
+ #flag-icon {
+    width: 12.75px;
+    height: 8.25px;
+    margin-right: 1.5px;
+}
+
+.phone-input select {
+    offset: 0;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.25%;
+    margin-right: 7.5px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7.5px 0;
+    margin-bottom: 18px;
+}
+
+.modal-btn {
+    width: 114.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 0;
+    border-radius: 5.25px;
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.5px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.form-check {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9.75px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 0;
+    color: var(--secondary-text-color);
+    margin-bottom: 13.25px;
+}
+.form-check a{
+    color: var(--btn-color);
+}
+
+#checkPrivacy {
+    width: 9.75px;
+    height: 9.75px;
+    border: .75px solid #d5d5d6;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (min-width: 1440px) {
+    #modal {
+        width: 800px;
+    }
+
+    .modal-img {
+        display: block;
+
+    }
+
+    .left-side {
+        padding: 17.5px 32px 15px;
+    }
+
+    .modal-title {
+        font-size: 34px;
+        margin-bottom: 24px;
+    }
+
+    .modal-text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .phone-input {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    #flag-icon {
+        width: 17px;
+        height: 11px;
+        margin-right: 2px;
+    }
+
+    .phone-input select {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.25%;
+        margin-right: 7.5px;
+    }
+
+    .btn-box{
+        padding: 10px 0;
+        margin-bottom: 24px;
+    }
+
+    .modal-btn{
+        width: 153px;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 12px 0;
+    }
+
+    .form-check{
+         gap: 8px;
+        font-size: 13px;
+         margin-bottom: 0;
+    }
+
+    #checkPrivacy{
+        width: 13px;
+        height: 13px;
+    }
+
+    .modal-bottom{
+        font-size: 12px;
+    }
+
+    .modal-bottom img{
+        width: 29.51px;
+        height: 19.28px;
+    }
+}
+.modal-bottom {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 0;
+    color: #bdbdbd;
+}
+
+.modal-bottom img {
+    width: 22.13px;
+    height: 14.46px;
+}
+
+.modal-bottom a {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1440px) {
+    #modal {
+        width: 800px;
+    }
+
+    .modal-img {
+        display: block;
+
+    }
+
+    .left-side {
+        padding: 17.5px 32px 15px;
+    }
+
+    .modal-title {
+        font-size: 34px;
+        margin-bottom: 24px;
+    }
+
+    .modal-text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .phone-input {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    #flag-icon {
+        width: 17px;
+        height: 11px;
+        margin-right: 2px;
+    }
+
+    .phone-input select {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.25%;
+        margin-right: 7.5px;
+    }
+
+    .btn-box{
+        padding: 10px 0;
+        margin-bottom: 24px;
+    }
+
+    .modal-btn{
+        width: 153px;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 12px 0;
+    }
+
+    .form-check{
+         gap: 8px;
+        font-size: 13px;
+         margin-bottom: 0;
+    }
+
+    #checkPrivacy{
+        width: 13px;
+        height: 13px;
+    }
+
+    .modal-bottom{
+        font-size: 12px;
+    }
+
+    .modal-bottom img{
+        width: 29.51px;
+        height: 19.28px;
+    }
+}
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
