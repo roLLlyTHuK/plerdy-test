@@ -4,6 +4,7 @@
 @import url('./benefits.css');
 @import url('./footer.css');
 @import url('./modal.css');
+@import url('./mob-menu.css');
 
 :root {
   --primary-text-color: #001E41;
