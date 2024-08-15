@@ -1,4 +1,5 @@
 import './scripts/swiper.js'
 import './scripts/validation.js'
 import './scripts/modal.js'
+import './scripts/operator.js'
 import './scripts/mob-menu.js'

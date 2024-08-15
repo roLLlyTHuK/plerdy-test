@@ -13,15 +13,15 @@
             </div>
         </div>
         <div>
-            <label for="tel" class="form-label">Lable</label>
+            <label for="phone-number" class="form-label">Lable</label>
             <div class="phone-input">
                 <img id="flag-icon" src="./img/Flag.svg" alt="ua"/>
                 <select id="operator-code">
-                    <option value="">+380</option>
-                    <option value="">+381</option>
-                    <option value="">+382</option>
+                    <option value="+380" data-flag="./img/Flag.svg">+380</option>
+                    <option value="+86" data-flag="https://flagcdn.com/w20/cn.png">+86</option>
+            <option value="+1" data-flag="https://flagcdn.com/w20/us.png">+1</option>
                 </select>
-                <input type="tel" class="form-control" id="tel" value="" placeholder="XX XXX XXXX" required>
+                <input type="tel" class="form-control" id="phone-number" value="" placeholder="XX XXX XXXX" required>
             </div>
         </div>
         <div class="valid-feedback">
@@ -29,8 +29,8 @@
         </div>
 
         <div class="btn-box">
-            <button class="modal-btn" id="senderBtn" type="submit" >Support</button>
-            <a href="#" class="modal-btn">Contact sales</a>
+            <button class="modal-btn disabled"  type="submit" >Support</button>
+            <button class="modal-btn" type="submit">Contact sales</button>
         </div>
 
         <div class="form-check">
