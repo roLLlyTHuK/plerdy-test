@@ -92,13 +92,31 @@ input::placeholder {
 }
 
 .phone-input {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 10.5px;
     margin-bottom: 18px;
 }
 
- #flag-icon {
+.phone-input-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50;
+    left: 8px;
+    width: 81px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+
+}
+
+#phone-number {
+    padding-left: 87px;
+}
+
+#flag-icon {
     width: 12.75px;
     height: 8.25px;
     margin-right: 1.5px;
@@ -151,7 +169,8 @@ input::placeholder {
     color: var(--secondary-text-color);
     margin-bottom: 13.25px;
 }
-.form-check a{
+
+.form-check a {
     color: var(--btn-color);
 }
 
@@ -163,6 +182,7 @@ input::placeholder {
     padding: 0;
     margin: 0;
 }
+
 @media only screen and (min-width: 1440px) {
     #modal {
         width: 800px;
@@ -216,38 +236,39 @@ input::placeholder {
         margin-right: 7.5px;
     }
 
-    .btn-box{
+    .btn-box {
         padding: 10px 0;
         margin-bottom: 24px;
     }
 
-    .modal-btn{
+    .modal-btn {
         width: 153px;
         font-size: 16px;
         line-height: 18px;
         padding: 12px 0;
     }
 
-    .form-check{
-         gap: 8px;
+    .form-check {
+        gap: 8px;
         font-size: 13px;
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 
-    #checkPrivacy{
+    #checkPrivacy {
         width: 13px;
         height: 13px;
     }
 
-    .modal-bottom{
+    .modal-bottom {
         font-size: 12px;
     }
 
-    .modal-bottom img{
+    .modal-bottom img {
         width: 29.51px;
         height: 19.28px;
     }
 }
+
 .modal-bottom {
     display: flex;
     align-items: center;
@@ -321,38 +342,39 @@ input::placeholder {
         margin-right: 7.5px;
     }
 
-    .btn-box{
+    .btn-box {
         padding: 10px 0;
         margin-bottom: 24px;
     }
 
-    .modal-btn{
+    .modal-btn {
         width: 153px;
         font-size: 16px;
         line-height: 18px;
         padding: 12px 0;
     }
 
-    .form-check{
-         gap: 8px;
+    .form-check {
+        gap: 8px;
         font-size: 13px;
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 
-    #checkPrivacy{
+    #checkPrivacy {
         width: 13px;
         height: 13px;
     }
 
-    .modal-bottom{
+    .modal-bottom {
         font-size: 12px;
     }
 
-    .modal-bottom img{
+    .modal-bottom img {
         width: 29.51px;
         height: 19.28px;
     }
 }
+
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0;
