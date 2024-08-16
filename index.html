@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
   <script type="module" crossorigin src="/plerdy-test/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/plerdy-test/assets/index-38d692d3.css">
+  <link rel="stylesheet" href="/plerdy-test/assets/index-0cda112d.css">
 </head>
 
 <body>
@@ -186,53 +186,56 @@
     <img class="modal-img" src="/plerdy-test/assets/modal-hero-ae0fd524.jpg" alt="operator">
     <div class="left-side">
         <h2 class="modal-title">How to do a Website Audit to Improve SEO & Conversions</h2>
-    <p class="modal-text">You will get an SMS with a link to the webinar</p>
-    <form class="needs-validation" id="modal-form" novalidate>
-        <div>
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" value="" placeholder="Boris Johnson" required>
+        <p class="modal-text">You will get an SMS with a link to the webinar</p>
+        <form class="needs-validation" id="modal-form" novalidate>
+            <div>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" value="" placeholder="Boris Johnson" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div>
+                <label for="phone-number" class="form-label">Lable</label>
+                <div class="phone-input">
+                    <div class="phone-input-box"><img id="flag-icon" src="https://flagcdn.com/w20/ua.png" alt="ua" />
+                        <select id="operator-code">
+                            <option value="+380" data-flag="https://flagcdn.com/w20/ua.png">+380</option>
+                            <option value="+86" data-flag="https://flagcdn.com/w20/cn.png">+86</option>
+                            <option value="+1" data-flag="https://flagcdn.com/w20/us.png">+1</option>
+                        </select>
+                    </div>
+
+                    <input type="tel" class="form-control" id="phone-number" value="" placeholder="XX XXX XXXX"
+                        required>
+                </div>
+            </div>
             <div class="valid-feedback">
                 Looks good!
             </div>
-        </div>
-        <div>
-            <label for="phone-number" class="form-label">Lable</label>
-            <div class="phone-input">
-                <img id="flag-icon" src="https://flagcdn.com/w20/ua.png" alt="ua"/>
-                <select id="operator-code">
-                    <option value="+380" data-flag="https://flagcdn.com/w20/ua.png">+380</option>
-                    <option value="+86" data-flag="https://flagcdn.com/w20/cn.png">+86</option>
-            <option value="+1" data-flag="https://flagcdn.com/w20/us.png">+1</option>
-                </select>
-                <input type="tel" class="form-control" id="phone-number" value="" placeholder="XX XXX XXXX" required>
+
+            <div class="btn-box">
+                <button class="modal-btn disabled" type="submit">Support</button>
+                <button class="modal-btn" type="submit">Contact sales</button>
             </div>
-        </div>
-        <div class="valid-feedback">
-            Looks good!
-        </div>
 
-        <div class="btn-box">
-            <button class="modal-btn disabled"  type="submit" >Support</button>
-            <button class="modal-btn" type="submit">Contact sales</button>
-        </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkPrivacy" required>
+                <label class="form-check-label" for="checkPrivacy">
+                    By sending up? you agree to our <a href="">Conditions</a> and <a href="">Privacy Policy</a>
+                </label>
+            </div>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
 
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="checkPrivacy" required>
-            <label class="form-check-label" for="checkPrivacy">
-                By sending up? you agree to our <a href="">Conditions</a> and <a href="">Privacy Policy</a>
-            </label>
+        </form>
+        <div class="modal-bottom">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAPCAYAAAAPr1RWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIXSURBVHgBrVRBbtNAFP1/7IZESMSVWICEVCOxYsMR6huQGzS5AHSNVOFKwKIbmhP0CuUEpDegexbewY5IFSTgeB7/z4zHBlVqq/bb8VieP++/9+ZPmO4wsv0fGY2GL5g2JQhzpjuIhwerXaZmAmBqLY1lZDDNUrplPDr49dnC7gJEIJZLgEluCzJ0w8hKZE/Ki+Kfj8pTLwcM90Uf12KeCyCZ9aRh2oNdF0C6eFz+zL6V90/xXxWPrcUMrgTP3/8+IfyZWDJjUu1+tZL9KBu4ILJdMhxnDimX2/L0HXYiF6JChkyB1cx+3eGDwb7DRFsS7GuoAstpX/pgZF8zbGFR588+rOdf3wyP0TJ1mh0IAqCM/EpezgNruCwBDZZT+vxoM4V6KTsuiRxEVrLXb/NydaqJcEisT9aVTWApaNsOB60roVPgFRg2Zk/yi1i8izEPkpO4kjxvLeS8ZNcgsAh1uBWHaJ1pzYo34haxcM1bib291AJLlYHosWX4hADMaKghY7vd5tChkb57sRGR0WWeS95ZzOSWgLfPF0nIGBWpHqEDkajY8rE3rgUI06wWGPnxTKuYVparraepI2Hk6C49S+5QZHazSQ9F05d+G8eQjvhejipRPe/pDic0hG2W6b2tZLaum08CvuOkyz+PvFdVyUtpzxmlqykaznz/eSgBXehYJ/VhUm+9FFfOZEpFsaawzF8cbS/+Ai3aKcyd39Q+AAAAAElFTkSuQmCC" alt="Plerdy logo">
+            <p>Powered by <a href="https://www.plerdy.com">Plerdy</a>Plerdy </p>
         </div>
-        <div class="invalid-feedback">
-            You must agree before submitting.
-        </div>
-
-    </form>
-    <div class="modal-bottom">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAPCAYAAAAPr1RWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIXSURBVHgBrVRBbtNAFP1/7IZESMSVWICEVCOxYsMR6huQGzS5AHSNVOFKwKIbmhP0CuUEpDegexbewY5IFSTgeB7/z4zHBlVqq/bb8VieP++/9+ZPmO4wsv0fGY2GL5g2JQhzpjuIhwerXaZmAmBqLY1lZDDNUrplPDr49dnC7gJEIJZLgEluCzJ0w8hKZE/Ki+Kfj8pTLwcM90Uf12KeCyCZ9aRh2oNdF0C6eFz+zL6V90/xXxWPrcUMrgTP3/8+IfyZWDJjUu1+tZL9KBu4ILJdMhxnDimX2/L0HXYiF6JChkyB1cx+3eGDwb7DRFsS7GuoAstpX/pgZF8zbGFR588+rOdf3wyP0TJ1mh0IAqCM/EpezgNruCwBDZZT+vxoM4V6KTsuiRxEVrLXb/NydaqJcEisT9aVTWApaNsOB60roVPgFRg2Zk/yi1i8izEPkpO4kjxvLeS8ZNcgsAh1uBWHaJ1pzYo34haxcM1bib291AJLlYHosWX4hADMaKghY7vd5tChkb57sRGR0WWeS95ZzOSWgLfPF0nIGBWpHqEDkajY8rE3rgUI06wWGPnxTKuYVparraepI2Hk6C49S+5QZHazSQ9F05d+G8eQjvhejipRPe/pDic0hG2W6b2tZLaum08CvuOkyz+PvFdVyUtpzxmlqykaznz/eSgBXehYJ/VhUm+9FFfOZEpFsaawzF8cbS/+Ai3aKcyd39Q+AAAAAElFTkSuQmCC" alt="Plerdy logo">
-        <p>Powered by <a href="https://www.plerdy.com">Plerdy</a>Plerdy </p>
     </div>
-    </div>
-    
+
 </div>
   <div class="mob-menu" id="mob-menu">
     <button class="modal-close" id="mob-close"><img src="/plerdy-test/assets/close-82fab782.svg" alt="close"></button>
